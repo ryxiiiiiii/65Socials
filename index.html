@@ -77,7 +77,7 @@
     }
 
     .card {
-      width: min(1180px, 100%);
+      width: min(1320px, 100%);
       position: relative;
       overflow: hidden;
       border: 1px solid var(--line);
@@ -124,7 +124,7 @@
 
     .content {
       display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(310px, 0.8fr);
+      grid-template-columns: minmax(680px, 1.45fr) minmax(320px, 0.7fr);
       align-items: center;
       gap: clamp(28px, 4vw, 62px);
       padding: clamp(28px, 4.8vw, 60px) clamp(24px, 5vw, 66px) 34px;
@@ -191,14 +191,14 @@
     }
 
     .social-link {
-      min-height: 78px;
+      min-height: 86px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 14px;
       position: relative;
       overflow: hidden;
-      padding: 14px 15px;
+      padding: 16px 18px;
       color: var(--text);
       text-decoration: none;
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -263,10 +263,10 @@
 
     .social-name {
       margin: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      overflow: visible;
+      text-overflow: clip;
       white-space: nowrap;
-      font-size: clamp(14px, 1.5vw, 16px);
+      font-size: clamp(14px, 1.35vw, 16px);
       font-weight: 850;
       letter-spacing: -0.01em;
     }
@@ -417,7 +417,7 @@
 
     footer .spacer { justify-self: end; }
 
-    @media (max-width: 930px) {
+    @media (max-width: 1100px) {
       .content {
         grid-template-columns: 1fr;
         padding-bottom: 18px;
@@ -506,22 +506,38 @@
               </span>
             </a>
 
-            <a class="social-link" href="https://www.youtube.com/@tthereal65" target="_blank" rel="noopener noreferrer" aria-label="Main YT öffnen">
+            <a class="social-link" href="https://www.instagram.com/_thereal65/" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">
               <span class="social-left">
                 <span class="icon-box" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M9.7 9.15v5.7L15.2 12 9.7 9.15Z" fill="currentColor"/>
-                    <path d="M21 12c0 4.2-1.15 6.2-9 6.2S3 16.2 3 12s1.15-6.2 9-6.2 9 2 9 6.2Z" stroke="currentColor" stroke-width="1.7"/>
+                    <rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2" stroke="currentColor" stroke-width="1.7"/>
+                    <circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="1.7"/>
+                    <circle cx="17.35" cy="6.75" r="1.05" fill="currentColor"/>
                   </svg>
                 </span>
-                <span class="social-name">Main YT</span>
+                <span class="social-name">Instagram</span>
               </span>
               <span class="arrow" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </span>
             </a>
 
-            <a class="social-link" href="https://www.youtube.com/results?search_query=thereal65_plug" target="_blank" rel="noopener noreferrer" aria-label="2.nd YT öffnen">
+            <a class="social-link" href="https://www.twitch.tv/tthereal65" target="_blank" rel="noopener noreferrer" aria-label="Twitch öffnen">
+              <span class="social-left">
+                <span class="icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M5 4.5h15v10.2l-4.2 4.1h-3.6l-2.4 2.2v-2.2H5V4.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                    <path d="M10 8.5v4.2M15 8.5v4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                <span class="social-name">Twitch</span>
+              </span>
+              <span class="arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+
+            <a class="social-link" href="https://www.youtube.com/@tthereal65" target="_blank" rel="noopener noreferrer" aria-label="Main YouTube öffnen">
               <span class="social-left">
                 <span class="icon-box" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none">
@@ -529,7 +545,22 @@
                     <path d="M21 12c0 4.2-1.15 6.2-9 6.2S3 16.2 3 12s1.15-6.2 9-6.2 9 2 9 6.2Z" stroke="currentColor" stroke-width="1.7"/>
                   </svg>
                 </span>
-                <span class="social-name">2.nd YT</span>
+                <span class="social-name">Main YouTube</span>
+              </span>
+              <span class="arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+
+            <a class="social-link" href="https://www.youtube.com/@thereal65_plug" target="_blank" rel="noopener noreferrer" aria-label="Highlights YouTube öffnen">
+              <span class="social-left">
+                <span class="icon-box" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M9.7 9.15v5.7L15.2 12 9.7 9.15Z" fill="currentColor"/>
+                    <path d="M21 12c0 4.2-1.15 6.2-9 6.2S3 16.2 3 12s1.15-6.2 9-6.2 9 2 9 6.2Z" stroke="currentColor" stroke-width="1.7"/>
+                  </svg>
+                </span>
+                <span class="social-name">Highlights YouTube</span>
               </span>
               <span class="arrow" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
